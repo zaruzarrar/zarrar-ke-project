@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>CLASSES OF js</title>
+
+</head>
+
+<body>
+
+<p>HOW TO USE JAVA SCRIPT CLASSES</p>
+
+<p id="student1"></p>
+
+<p id="student2"></p>
+
+<script>
+
+class Student {
+
+constructor(name, year) {
+
+this.name = name;
+
+this.year = year;
+
+}
+
+age() {
+
+let date = new Date();
+
+return date.getFullYear() - this.year;
+
+}
+
+}
+
+let student1 = new Student("ZARRAR", 2012);
+
+document.getElementById("student1").innerHTML =
+
+"My name is " + student1.name + ". I was born in " + student1.year + ". And my age is " + student1.age() + ".";
+
+let student2 = new Student("Ali", 2010);
+
+document.getElementById("student2").innerHTML =
+
+"My name is " + student2.name + ". I was born in " + student2.year + ". And my age is " + student2.age() + ".";
+
+</script>
+
+</body>
+
+</html>
